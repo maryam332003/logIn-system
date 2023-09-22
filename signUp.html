@@ -1,0 +1,111 @@
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="./img/signup.ico" type="image/x-icon" />
+      <title>Sign Up</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="css/all.min.css" />
+      <link rel="stylesheet" href="css/mediaQuery.css" />
+
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+      <div
+        class="signUp-container d-flex my-5 p-4 justify-content-start w-75 m-auto py-5"
+      >
+        <div class="signup-photo my-4">
+          <img src="img/undraw_file_sync_ot38.svg" class="w-100" alt="" />
+
+          <a href="login.html" class="text-center d-block mt-3">
+            I'm Already a Member
+          </a>
+        </div>
+        <div
+          class="user-info d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="form">
+            <h2 class="my-4">Sign Up</h2>
+            <div class="input-icons d-flex my-4">
+              <i class="fa-solid fa-user-tie"></i>
+              <input
+                class="input-field pt-1"
+                type="text"
+                placeholder="Full Name"
+                id="signUpFullName"
+              />
+            </div>
+            <p class="text-danger d-none">
+              Full Name must have space between words
+            </p>
+            <div class="input-icons my-4">
+              <i class="fa-solid fa-at"></i>
+              <input
+                class="input-field pt-1"
+                type="text"
+                placeholder="User Name"
+                id="signUpUserName"
+              />
+            </div>
+            <p class="text-danger d-none">
+              User Name must be between 3 and 16 characters
+            </p>
+
+            <div class="input-icons my-4">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                class="input-field pt-1"
+                type="email"
+                placeholder="Email"
+                id="signUpEmail"
+              />
+            </div>
+            <p class="text-danger d-none">User Email is invalid</p>
+
+            <div class="input-icons my-4">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                class="input-field pt-1"
+                type="password"
+                placeholder="Password"
+                id="signUpPassword"
+              />
+            </div>
+            <p class="text-danger d-none">
+              Password must be between 7 and 14 characters
+            </p>
+
+            <div class="input-icons my-4">
+              <i class="fa-solid fa-unlock"></i>
+              <input
+                class="input-field pt-1"
+                type="password"
+                placeholder="Confirm Password"
+                id="signUpRePassword"
+              />
+            </div>
+            <p class="text-danger d-none">
+              Password and rePassword not matched
+            </p>
+            <p class="text-danger d-none" id="formAlert">
+              please full in all of the inputs
+            </p>
+            <button class="px-5 py-2 rounded-2 my-3 signUpBtn" id="signUpBtn">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/main.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
+</html>

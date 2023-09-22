@@ -1,0 +1,48 @@
+@media only screen and (max-width: 600px) {
+
+    .signUp-container,
+    .signIn-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-info .form {
+        width: 100%;
+    }
+
+    .signup-photo,
+    .signIn-container .signin-photo {
+        width: 100% !important;
+        margin: auto;
+
+    }
+
+    .signIn-container .user-info,
+    .signUp-container .user-info {
+        width: 100% !important;
+        padding-bottom: 70px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .signUp-container {
+        display: flex;
+        flex-direction: column;
+        margin: 500px !important;
+    }
+
+    .user-info .form {
+        width: 100%;
+    }
+
+    .signUp-container .signup-photo {
+        width: 95% !important;
+        margin: auto;
+    }
+
+    .signUp-container .user-info {
+        width: 100% !important;
+        padding-bottom: 70px;
+    }
+}
