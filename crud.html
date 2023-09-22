@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crud</title>
-    <link rel="shortcut icon" href="./img/crud.icon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-      <h1 class="head text-dark text-center fw-bold">
-        Product Management System
-      </h1>
-      
- 
+    <h1 class="head text-dark text-center fw-bold mt-3">
+      Product Management System
+    </h1>
+
     <div class="container form-control shadow-lg my-5 w-75">
       <input
         type="text"
@@ -52,7 +56,9 @@
         placeholder="Search..."
       />
     </div>
-    <div class="container shadow-lg text-center w-75 p-0 border-2 overflow-hidden">
+    <div
+      class="container shadow-lg text-center w-75 p-0 border-2 overflow-hidden"
+    >
       <table class="table table-striped w-100">
         <thead>
           <th class="bg-dark text-light">Index</th>
@@ -65,7 +71,12 @@
         <tbody id="demo" class="fs-4"></tbody>
       </table>
     </div>
-    <button class="btn btn-outline-dark d-block m-auto my-5 px-3 py-2" id="logOutBtn">LogOut</button>
+    <button
+      class="btn btn-outline-dark d-block m-auto my-5 px-3 py-2"
+      id="logOutBtn"
+    >
+      LogOut
+    </button>
     <script src="js/crud.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>

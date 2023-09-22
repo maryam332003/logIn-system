@@ -86,8 +86,8 @@ function searchForProduct(searchedValue) {
         <td>${productArray[i].price}</td>
         <td>${productArray[i].description}</td>
         <td>
-        <button class="btn btn-outline-primary py-2 px-3" onclick="deleteProduct(${i})">DELETE</button>
-        <button class="btn btn-outline-danger py-2 px-3 mx-2"  onclick="setValueForUpdate(${i})">UPDATE</button>
+        <button class="btn btn-outline-primary py-2 px-3" onclick="deleteProduct(${i})">DELETE</button></td>
+        <td> <button class="btn btn-outline-danger py-2 px-3 mx-2"  onclick="setValueForUpdate(${i})">UPDATE</button>
         </td>
         </tr>
       
