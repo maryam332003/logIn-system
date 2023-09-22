@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Crimson Text', serif;
 }
 
@@ -28,7 +28,7 @@ a {
 }
 
 .is-valid {
-    /* border-color: #198754 !important; */
+    border-color: #198754 !important;
     padding-left: calc(1.5em + 0.75rem);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
@@ -87,26 +87,35 @@ input {
     text-align: center;
 }
 
-#logInBtn {
-    background-color: #6C63FF;
-    color: white;
+#logInBtn,
+.btn-update {
+    background-color: #6C63FF !important;
+    color: white !important;
+    color: #6C63FF;
+    border: #6C63FF 2px solid;
+}
+
+#logInBtn:hover,
+.btn-update:hover {
+    background-color: white !important;
+    color: #6C63FF !important;
     border: #6C63FF 2px solid !important;
     border: none;
 }
 
-#logInBtn:hover {
-    color: #6C63FF;
-    background-color: white;
-}
-
-.signUpBtn {
+.signUpBtn,
+.btn-add,
+.logOutBtn {
     background-color: #38D39F;
     color: white;
     border: #38D39F 2px solid !important;
     border: none;
 }
 
-.signUpBtn:hover {
+.signUpBtn:hover,
+.btn-add:hover,
+.logOutBtn:hover
+ {
     color: #38D39F;
     background-color: white;
 }
@@ -142,61 +151,6 @@ input {
 
 }
 
-
-
-
-
-
-
-
-
-
-.welcomeHome {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/curvy-narrow-muddy-road-dark-forest-surrounded-by-greenery-little-light-coming-from.jpg);
-    background-size: 100% 100%;
-    padding: 0;
-    margin: 0;
-    background-position: center;
-}
-
-.welcomeHome .box {
-    /* border: 2px solid rgb(56, 149, 248); */
-    border-radius: 20px;
-    backdrop-filter: blur(8px);
-    width: 50%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.welcomeHome .box h1 {
-    color: #5f5f36 !important;
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.welcomeBody nav {
-    backdrop-filter: blur(8px);
-}
-
-.welcomeBody nav a {
-    color: #5f5f36 !important;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.btn-outline-sub {
-    --bs-btn-color: #5f5f36;
-    --bs-btn-border-color: #5f5f36;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #5f5f36;
-    --bs-btn-hover-border-color: #5f5f36;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -205,4 +159,13 @@ input {
 #updateProductBtn {
     display: none;
     text-align: center;
+}
+
+.crud-container,
+.crud-table {
+    width: 80%;
+}
+
+nav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

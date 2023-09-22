@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crud</title>
+    <link rel="shortcut icon" href="./img/crud.icon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,72 +12,96 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/mediaQuery.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 class="head text-dark text-center fw-bold mt-3">
-      Product Management System
-    </h1>
-
-    <div class="container form-control shadow-lg my-5 w-75">
-      <input
-        type="text"
-        placeholder="Enter The Product Name"
-        id="ProdName"
-        class="form-control my-3"
-      />
-      <input
-        type="number"
-        placeholder="Enter The Product Price"
-        id="ProdPrice"
-        class="form-control my-3"
-      />
-      <textarea
-        id="ProdDesc"
-        cols="20"
-        rows="5"
-        class="form-control"
-        placeholder="Enter The Product Description"
-      ></textarea>
-      <button class="btn btn-danger my-3 py-2 px-3 w-100" id="addProduct">
-        Add Product
-      </button>
-      <button
-        class="btn btn-success my-3 py-2 px-3 w-100 text-center"
-        id="updateProductBtn"
+    <nav class="position-fixed bg-light w-100 mb-4 z-3">
+      <div
+        class="container d-flex justify-content-between align-items-center w-75"
       >
-        Update Product
-      </button>
-      <input
-        id="search"
-        oninput="searchForProduct(this.value)"
-        type="text"
-        class="form-control w-50 m-auto my-3"
-        placeholder="Search..."
-      />
-    </div>
-    <div
-      class="container shadow-lg text-center w-75 p-0 border-2 overflow-hidden"
-    >
-      <table class="table table-striped w-100">
-        <thead>
-          <th class="bg-dark text-light">Index</th>
-          <th class="bg-dark text-light">Name</th>
-          <th class="bg-dark text-light">Price</th>
-          <th class="bg-dark text-light">Description</th>
-          <th class="bg-dark text-light">Update</th>
-          <th class="bg-dark text-light">Delete</th>
-        </thead>
-        <tbody id="demo" class="fs-4"></tbody>
-      </table>
-    </div>
-    <button
-      class="btn btn-outline-dark d-block m-auto my-5 px-3 py-2"
-      id="logOutBtn"
-    >
-      LogOut
-    </button>
+        <div class="logo">
+          <h1>CRUD</h1>
+        </div>
+        <div class="button">
+          <button class="btn btn-outline-dark px-4 py-2 logOutBtn" id="logOutBtn">
+            LogOut
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section class="crud position-relative pt-3">
+      <h1 class="head text-dark text-center fw-bold pt-5">
+        Product Management System
+      </h1>
+
+      <div class="container crud-container form-control shadow-lg my-5 w-75">
+        <div class="my-2">
+          <input
+            type="text"
+            placeholder="Enter The Product Name"
+            id="prodName"
+            class="form-control my-1"
+          />
+          <p class="text-danger fs-5 d-none">
+            Product name start with capital char,more than 4 char
+          </p>
+        </div>
+        <div class="my-2">
+          <input
+            type="number"
+            placeholder="Enter The Product Price"
+            id="prodPrice"
+            class="form-control my-1"
+          />
+          <p class="text-danger fs-5 d-none">Please enter number</p>
+        </div>
+        <div class="my-2">
+          <textarea
+            id="prodDesc"
+            cols="20"
+            rows="5"
+            class="form-control"
+            placeholder="Enter The Product Description"
+          ></textarea>
+          <p class="text-danger fs-5 d-none">
+            Product description more than 5 char
+          </p>
+        </div>
+        <button class="btn btn-add my-3 py-2 px-3 w-100" id="addProduct">
+          Add Product
+        </button>
+        <button
+          class="btn btn-update my-3 py-2 px-3 w-100 text-center"
+          id="updateProductBtn"
+        >
+          Update Product
+        </button>
+        <input
+          id="search"
+          oninput="searchForProduct(this.value)"
+          type="text"
+          class="form-control w-50 m-auto my-3"
+          placeholder="Search..."
+        />
+      </div>
+      <div
+        class="container crud-table shadow-lg text-center w-75 p-0 border-2 overflow-hidden"
+      >
+        <table class="table table-striped w-100">
+          <thead>
+            <th class="bg-dark text-light">Index</th>
+            <th class="bg-dark text-light">Name</th>
+            <th class="bg-dark text-light">Price</th>
+            <th class="bg-dark text-light">Description</th>
+            <th class="bg-dark text-light">Update</th>
+            <th class="bg-dark text-light">Delete</th>
+          </thead>
+          <tbody id="demo" class="fs-4"></tbody>
+        </table>
+      </div>
+    </section>
     <script src="js/crud.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
