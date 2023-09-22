@@ -41,6 +41,10 @@ function deleteProduct(index) {
 }
 function clear() {
   (prodName.value = ""), (prodPrice.value = ""), (prodDesc.value = "");
+  prodName.classList.remove("is-valid")
+  prodPrice.classList.remove("is-valid")
+  prodDesc.classList.remove("is-valid")
+
 }
 function setValueForUpdate(index) {
   prodName.value = productArray[index].name;
