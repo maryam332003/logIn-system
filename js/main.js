@@ -6,8 +6,8 @@ const signUpRePassword = document.getElementById("signUpRePassword");
 
 const signUpBtn = document.getElementById("signUpBtn");
 
-const fullNameRegex = /^[a-z,',-]+(\s)[a-z,',-]+$/;
-const userNameRegex = /^[a-zA-Z0-9_-]{3,16}$/;
+const fullNameRegex = /^[a-zA-Z]{4,}$/
+const userNameRegex = /^[A-Z]{1}[a-z ]{3,}$/;
 const emailRegex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
 const passRegex = /^[A-Za-z]\w{7,14}$/;
 

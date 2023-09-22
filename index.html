@@ -30,7 +30,7 @@
         >
           <div class="form d-flex flex-column">
             <h2 class="my-2">Sign Up</h2>
-            <div class="input-icons d-flex my-4">
+            <div class="input-icons d-flex my-2">
               <i class="fa-solid fa-user-tie"></i>
               <input
                 class="input-field pt-1"
@@ -40,7 +40,7 @@
               />
             </div>
             <p class="text-danger d-none">
-              Full Name must have space between words
+              Full name more than 4 character
             </p>
             <div class="input-icons my-2">
               <i class="fa-solid fa-at"></i>
@@ -51,8 +51,8 @@
                 id="signUpUserName"
               />
             </div>
-            <p class="text-danger d-none">
-              User Name must be between 3 and 16 characters
+            <p class="text-danger d-none fs-6">
+              User Name start with capital char,more than 3 char
             </p>
 
             <div class="input-icons my-2">
@@ -64,7 +64,7 @@
                 id="signUpEmail"
               />
             </div>
-            <p class="text-danger d-none">User Email is invalid</p>
+            <p class="text-danger d-none fs-6">User Email is invalid</p>
 
             <div class="input-icons my-2">
               <i class="fa-solid fa-lock"></i>
@@ -75,11 +75,11 @@
                 id="signUpPassword"
               />
             </div>
-            <p class="text-danger d-none">
-              Password must be between 7 and 14 characters
+            <p class="text-danger d-none fs-6">
+              Password must be between 7 and 14 characters,no special char
             </p>
 
-            <div class="input-icons my-4">
+            <div class="input-icons my-2">
               <i class="fa-solid fa-unlock"></i>
               <input
                 class="input-field pt-1"
@@ -88,10 +88,10 @@
                 id="signUpRePassword"
               />
             </div>
-            <p class="text-danger d-none">
+            <p class="text-danger d-none fs-6">
               Password and rePassword not matched
             </p>
-            <p class="text-danger d-none" id="formAlert">
+            <p class="text-danger d-none fs-6" id="formAlert">
               please full in all of the inputs
             </p>
             <button class="px-5 py-2 rounded-2 my-3 signUpBtn" id="signUpBtn">
